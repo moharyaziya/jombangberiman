@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>punyajbb</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="mode-toggle" class="mode-toggle" aria-label="Toggle mode" type="button">
+    <span class="mode-icon">☀️</span>
+  </button>
+
+  <header class="hero">
+    <p class="hero-eyebrow">The Last But Not The Least</p>
+    <h1 class="hero-title">Jombang Beriman</h1>
+    <p class="hero-sub">berawal dari sebuah pertemuan yang tak terduga yang membuat kita menjadi dekat</p>
+
+    <nav class="tab-nav" role="tablist" aria-label="Navigasi halaman">
+      <button class="tab-btn active" data-tab="memories" role="tab" aria-selected="true" aria-controls="memories-panel" id="tab-memories">Memories</button>
+      <button class="tab-btn" data-tab="members" role="tab" aria-selected="false" aria-controls="members-panel" id="tab-members">Warga Jombang</button>
+      <button class="tab-btn" data-tab="events" role="tab" aria-selected="false" aria-controls="events-panel" id="tab-events">Events</button>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="tab-panel active" id="memories-panel" role="tabpanel" aria-labelledby="tab-memories">
+      <p class="hero-subtitle">Some Of Our Memories</p>
+
+      <div class="board" id="board">
+        <article class="memory tilt-left">
+          <div class="tape"></div>
+          <div class="photo" style="background-image:url('assets/men2.jpg')"></div>
+          <p class="caption"></p>
+          <span class="date">19 July 2k26</span>
+        </article>
+
+        <article class="memory tilt-right">
+          <div class="tape"></div>
+          <div class="photo" style="background-image:url('assets/brg.jpg')"></div>
+          <p class="caption">we know this is the last meet for now, but in another time we will meet again with the another version from us</p>
+          <span class="date">19 July 2k26</span>
+        </article>
+
+        <article class="memory tilt-left">
+          <div class="tape"></div>
+          <div class="photo" style="background-image:url('assets/grl1.jpg')"></div>
+          <p class="caption"></p>
+          <span class="date">19 July 2k26</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="members-panel" role="tabpanel" aria-labelledby="tab-members" hidden>
+      <div class="panel-heading">
+        <h2 class="panel-title">Warga Jombang</h2>
+        <p class="panel-subtitle">Mereka yang jadi bagian dari perjalanan ini.</p>
+      </div>
+
+      <div class="members-grid">
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/nenepp.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Xaviera</p><p class="member-meta">UNIVERSITAS AIRLANGGA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/mpokk.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Angga</p><p class="member-meta">UNIVERSITAS BRAWIJAYA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/pinaa.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Fina</p><p class="member-meta">UNIVERSITAS NEGERI MALANG</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/Raditt.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Radit</p><p class="member-meta">UNIVERSITAS AIRLANGGA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/jadekk.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Jasmine</p><p class="member-meta">UNIVERSITAS BRAWIJAYA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/fadell.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Fadel</p><p class="member-meta">INSTITUT PERTANIAN BOGOR</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/aryaa.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Arya</p><p class="member-meta">UIN MAULANA MALIK IBRAHIM</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/arkaa.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Arka</p><p class="member-meta">INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/nenekk.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Zahrani</p><p class="member-meta">UNIVERSITAS BRAWIJAYA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/anyaa.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Anya</p><p class="member-meta">INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/asyaa.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Asya</p><p class="member-meta">UNIVERSITAS AIRLANGGA</p></div>
+        </article>
+        <article class="member-card">
+          <div class="member-photo"><img src="assets/himee.jpg" alt="WARGA JOMBANG" /></div>
+          <div class="member-info"><p class="member-name">Hime</p><p class="member-meta">UNIVERSITAS DIPONEGORO</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="events-panel" role="tabpanel" aria-labelledby="tab-events" hidden>
+      <div class="panel-heading">
+        <h2 class="panel-title">Events</h2>
+        <p class="panel-subtitle">Momen yang pernah kita lewati bersama dan akan selalu diingat.</p>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card full-row">
+          <h3>Bukber AltXJombang</h3>
+          <p class="event-date">15 Maret 2026</p>
+          <p>first meet with member jombang beriman.</p>
+
+          <div class="event-docs">
+            <div class="doc-frame"><img src="assets/bkb1.jpg" alt="Dokumentasi Bukber 1" /></div>
+            <div class="doc-frame"><img src="assets/bkb2.jpg" alt="Dokumentasi Bukber 2" /></div>
+            <div class="doc-frame"><img src="assets/bkb3.jpg" alt="Dokumentasi Bukber 3" /></div>
+            <div class="doc-frame"><img src="assets/brcd.jpg" alt="Dokumentasi Bukber 4" /></div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <h3>Soon</h3>
+          <p class="event-date"></p>
+          <p>nongki.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>make with 🤍 for Jombang Beriman</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Tutup">✕</button>
+    <img id="lightbox-img" class="lightbox-img" alt="" />
+    <div id="lightbox-caption" class="lightbox-caption" role="status"></div>
+  </div>
+
+  <audio id="bg-audio" loop preload="auto" src="assets/aboutyou.mp3"></audio>
+  <button id="audio-control" class="audio-control" aria-label="Play background music" hidden>▶</button>
+  <script src="script.js"></script>
+</body>
+</html>
